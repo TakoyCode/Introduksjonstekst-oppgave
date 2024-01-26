@@ -1,3 +1,21 @@
-body {
-    background-color: gray;
+body.gray {
+    background-color: gray
+}
+
+body.red {
+    background-color: red;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.padding-left {
+    padding-left: 25%;
+}
+
+.centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
