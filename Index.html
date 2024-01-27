@@ -8,86 +8,84 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="background">
+<body id="background" class="testborder">
     <div class="">
+
         <h1>Audun Nicolai Nicolaisen</h1>
         <!-- Bilde av meg -->
-        <img class="" src="img/GOAT.png" alt="GOAT" />
-        <div class="">
-            <!-- litt om meg -->
-            <h2 class="">Litt om meg</h2>
-            <div>
-                <p>Hei jeg er Audun og jeg er en 22 år gammel mann fra Skoger, Drammen.
-                    <br /> Har bod i Drammen hele mitt liv, men jeg har reist endel.
-                    <br /> (Har f.eks. vært i Italia, Egypt, Tyskland og Spania.)
-                </p>
-                <p>Så lenge jeg kan huske har jeg altid vært glad i å lage ting.
-                    <br /> Som er en av grunnene jeg søkte meg her til <a href="https://getacademy.no/">GetAcademy</a> ,
-                    <br /> så jeg kan lære meg programmering til å kunne lage noen kule ting.
-                </p>
+        <img class="" src="img/GOAT.png" alt="GOAT/Temp" />
 
+        <!-- litt om meg -->
+        <h2 class="">Litt om meg</h2>
+        <p>Hei, jeg er Audun og er en 22 år gammel mann fra Skoger, Drammen.
+            <br /> Har bod i Drammen hele livet mitt, men jeg har reist litt rundt.
+            <br /> (Har f.eks. vært i Italia, Egypt, Tyskland og Spania.)
+        </p>
+
+        <p>Så lenge jeg kan huske har jeg altid vært glad i å lage ting.
+            <br /> Som er en av grunnene jeg søkte meg her til
+            <a href="https://getacademy.no/" target="_new">GetAcademy</a> ,
+            <br /> så jeg kan lære meg programmering til å kunne lage noen kule ting.
+        </p>
+
+
+        <!-- list av hobbyene mine -->
+        <ul class="listRemovePadding">
+            <strong>Mine Hobbyer er:</strong>
+            <div class="lineupdots">
+                <li>Gaming</li>
+                <li>Sying</li>
+                <li>Piano</li>
             </div>
+        </ul>
 
-            <!-- list av hobbyene mine -->
-            <div class="">
-                <ul>
-                    <strong>Mine Hobbyer er:</strong>
-                    <li>Gaming</li>
-                    <li>Sying</li>
-                    <li>Piano</li>
-                </ul>
-            </div>
 
-            <div><strong> Endre bakgrunns farger: </strong></div>
-            <!-- En knapp du kan trkke på som endrer bakgrunnsfragen på nettsiden -->
-            <button onclick="changeToGray()">Endre til Grå</button>
-            <button onclick="changeToRed()">Endre til Rød</button>
-            <br />
-            <button onclick="changeToGrayGradiant()">Endre til Grå Gradiant</button>
-            <button onclick="changeToRedGradiant()">Endre til Rød Gradiant</button>
+        <div><strong> Endre bakgrunns farger: </strong></div>
+        <!-- En knapp du kan trkke på som endrer bakgrunnsfragen på nettsiden -->
+        <button onclick="changeToGray()">Endre til Grå</button>
+        <button onclick="changeToRed()">Endre til Rød</button>
+        <br />
+        <button onclick="changeToGrayGradiant()">Endre til Grå Gradiant</button>
+        <button onclick="changeToRedGradiant()">Endre til Rød Gradiant</button>
 
-        </div>
-    </div>
+        <script>
 
-    <script>
+            //Kjører changeToGray(); på oppstart av siden
+            changeToGrayGradiant();
 
-        //Kjører changeToGray(); på oppstart av siden
-        changeToGrayGradiant();
+            // senterer elemente
+            function centering() {
+                document.getElementById('background').classList.add('centerpage');
+            }
 
-        // senterer elemente
-        function centering() {
-            document.getElementById('background').classList.add('centerpage');
-            document.getElementById('background').classList.add('centerelements');
-        }
+            // bytter bakgrunns fargen til grå
+            function changeToGray() {
+                document.getElementById('background').classList = [];
+                document.getElementById('background').classList.add('gray');
+                centering();
+            }
 
-        // bytter bakgrunns fargen til grå
-        function changeToGray() {
-            document.getElementById('background').classList = [];
-            document.getElementById('background').classList.add('gray');
-            centering();
-        }
+            function changeToGrayGradiant() {
+                document.getElementById('background').classList = [];
+                document.getElementById('background').classList.add('graygradiant');
+                centering();
+            }
 
-        function changeToGrayGradiant() {
-            document.getElementById('background').classList = [];
-            document.getElementById('background').classList.add('graygradiant');
-            centering();
-        }
+            // bytter bakgrunns fargen til rød
+            function changeToRed() {
+                document.getElementById('background').classList = [];
+                document.getElementById('background').classList.add('red');
+                centering();
+            }
 
-        // bytter bakgrunns fargen til rød
-        function changeToRed() {
-            document.getElementById('background').classList = [];
-            document.getElementById('background').classList.add('red');
-            centering();
-        }
+            // bytter bakgrunns fargen til rød
+            function changeToRedGradiant() {
+                document.getElementById('background').classList = [];
+                document.getElementById('background').classList.add('redgradiant');
+                centering();
+            }
 
-        // bytter bakgrunns fargen til rød
-        function changeToRedGradiant() {
-            document.getElementById('background').classList = [];
-            document.getElementById('background').classList.add('redgradiant');
-            centering();
-        }
-
-    </script>
+        </script>
 
 </body>
 
