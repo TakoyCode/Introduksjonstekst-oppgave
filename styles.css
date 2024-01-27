@@ -1,21 +1,37 @@
-body.gray {
-    background-color: gray
+.gray {
+    background-color: gray;
 }
 
-body.red {
+.red {
     background-color: red;
 }
 
-.padding {
-    padding: 20px;
+.graygradiant {
+    background-image: linear-gradient(to bottom, lightgray, rgb(110, 110, 110));
+    background-attachment: fixed;
+
 }
 
-.padding-left {
-    padding-left: 25%;
+.redgradiant {
+    background-image: linear-gradient(to bottom, rgb(255, 134, 154), darkred);
+    background-attachment: fixed;
+
 }
 
-.centering {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.centerpage {
+    margin: auto;
+    width: 70%;
+}
+
+.centerelements {
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+    margin-right: 10%;
+}
+
+button {
+    width: 150px;
 }
