@@ -9,7 +9,6 @@
 .graygradiant {
     background-image: linear-gradient(to bottom, lightgray, rgb(110, 110, 110));
     background-attachment: fixed;
-
 }
 
 .redgradiant {
@@ -23,6 +22,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: large;
 }
 
 .lineupdots {
