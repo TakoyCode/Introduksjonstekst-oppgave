@@ -13,10 +13,11 @@
         <h1>Audun Nicolai Nicolaisen</h1>
 
         <!-- Bilde av meg -->
-        <img class="" src="img/GOAT.png" alt="GOAT/Temp" />
-
+        <div>
+            <div id="image"></div>
+        </div>
         <!-- litt om meg -->
-        <h2 class="">Litt om meg</h2>
+        <h2>Litt om meg</h2>
         <p>
             Hei, jeg er Audun og er en 22 år gammel mann fra Skoger, Drammen.
             <br /> Har bod i Drammen hele livet mitt, men jeg har reist litt rundt.
@@ -24,17 +25,28 @@
         </p>
 
         <p>
-            På videregående så gikk jeg Data og elektronik vg1/2, men i vg3 byttet jeg til studiespesialisering
-            <br /> test
-            <br /> test
-        </p>
-
-        <p>
-            Så lenge jeg kan huske har jeg altid vært glad i å lage ting.
+            På videregående så gikk jeg Data og elektronik vg1/2,
+            men i vg3 byttet jeg til studiespesialisering.
+            <br /> Så lenge jeg kan huske har jeg altid vært glad i å lage/lære meg nye ting.
             <br /> Som er en av grunnene jeg søkte meg her til
             <a href="https://getacademy.no/" target="_new">GetAcademy</a>,
             <br /> så jeg kan lære meg programmering til å kunne lage noen kule ting.
+            <br>
+            <br /> Jeg bruker mye av fritida min til å spille og har spilt videospill hele livet mitt.
+            <br /> Spiller alt jeg kan få hendene mine på, men jeg er mest glad i strategi spill.
         </p>
+
+        <ul class="listremovepadding">
+            <strong> Her er noen spill jeg er spesielt glad i:</strong>
+            <div class="lineupdots">
+                <li>Persona 5 royale</li>
+                <li>Smite</li>
+                <li>Civ 5/6</li>
+                <li>Storybookbrawl</li>
+                <li>Path of exile</li>
+            </div>
+            </p>
+        </ul>
 
 
         <!-- list av hobbyene mine -->
@@ -56,16 +68,34 @@
         <br />
         <button onclick="changeToGrayGradiant()">Endre til Grå Gradiant</button>
         <button onclick="changeToRedGradiant()">Endre til Rød Gradiant</button>
+
+        <img src="" alt="" style="">
+
     </div>
     <script>
 
         //Kjører changeToGray(); på oppstart av siden
         changeToGrayGradiant();
+        changeimgAudun();
 
         // senterer elemente
         function centering() {
             document.getElementById('background').classList.add('centerpage');
         }
+
+        function changeimgGoat() {
+            document.getElementById('image').innerHTML = /*html*/ `
+            <img  src=" img/GOAT.png" alt="GOAT" onclick=changeimgAudun();>
+        `
+        }
+
+        function changeimgAudun() {
+            document.getElementById('image').innerHTML = /*html*/ `
+        <img src="img/Audun.jpg" alt="GOAT" onclick=changeimgGoat(); style="height: 250px;">
+            `
+        }
+
+
 
         // bytter bakgrunns fargen til grå
         function changeToGray() {
